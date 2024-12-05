@@ -19,5 +19,6 @@ namespace MyPortfolyo.DAL.Context
         public DbSet<Skill> Skills { get; set; }
         public DbSet<SocialMedia> SocialMedias { get; set; }
         public DbSet<Testimonial> Testimonials { get; set; }
+        public DbSet<ToDoList> toDoLists { get; set; }
     }
 }

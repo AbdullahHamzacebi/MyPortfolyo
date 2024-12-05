@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MyPortfolyo.DAL.Context;
 
@@ -11,9 +12,10 @@ using MyPortfolyo.DAL.Context;
 namespace MyPortfolyo.Migrations
 {
     [DbContext(typeof(MyPortolioContext))]
-    partial class MyPortolioContextModelSnapshot : ModelSnapshot
+    [Migration("20241204140917_mig2")]
+    partial class mig2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
